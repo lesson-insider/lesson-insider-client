@@ -1,0 +1,44 @@
+.aboutTextBody {
+    background-color: #292b2c !important;
+    color: #ddd8d2;
+    height: auto;
+
+    position: relative;
+    /* margin-top: 100px; */
+    margin-bottom: 60px;
+}
+
+.aboutText {
+    background-color: #3f4142 !important;
+
+    width: 70%;
+    height: 300px;
+    /* border: 1px solid gray; */
+    border-radius: 7px;
+    position: relative;
+    top: 15%;
+    left: 15%;
+}
+.aboutText:hover {
+    background-color: #2f3233 !important;
+}
+
+.quoteIcon {
+    font-size: 48px;
+    position: relative;
+    top: -19px;
+    left: 25px;
+    color: purple;
+}
+.aboutText:hover {
+    box-shadow: 2px 2px 20px 5px rgb(95, 95, 95);
+    transition: all ease-in-out 0.3s;
+}
+.textOnly {
+    text-align: center;
+    padding: 10px;
+    margin: 0px 20px;
+}
+.mottoColor {
+    color: #7fffd4;
+}

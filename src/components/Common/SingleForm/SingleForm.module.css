@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -300px;
+    margin: 0 auto;
+    opacity: 0.9;
+    width: 60%;
+}
+.button {
+    margin-left: 10px;
+}
+.searchBar {
+    /* width: 50%; */
+}
+
+.searchIcon {
+    margin-left: 4px;
+
+    padding-right: 10px;
+}
+.button2 {
+    border-radius: 40px;
+    position: fixed;
+
+    top: 80%;
+
+    right: -14px;
+    z-index: 2;
+}
+.button2:hover {
+    background-color: green;
+}

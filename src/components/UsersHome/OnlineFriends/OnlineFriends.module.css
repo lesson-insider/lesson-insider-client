@@ -1,0 +1,52 @@
+.OnlineFriendsBody {
+    width: 100%;
+    height: 857px;
+    /* height: auto !important; */
+    border: none !important;
+    /* border: 1px solid whitesmoke; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* padding: 3px; */
+    border-radius: 10px;
+    /* margin-top: 10px; */
+
+    background-color: #101111 !important;
+    color: #ddd8d2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+}
+/* @media all and (max-width: 1201px) {
+    .OnlineFriendsBody {
+        display: none;
+    }
+} */
+
+.OnlineFriendsHeader {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #101111 !important;
+}
+.OnlineFriendsHeader > h3 {
+    background-color: #101111 !important;
+}
+
+.OnlineFriendsBody::-webkit-scrollbar {
+    border-radius: 25px;
+    width: 13px;
+}
+.OnlineFriendsBody::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+.AccordionBody {
+    padding: 0px !important;
+    width: 100%;
+    height: 110vh;
+    background-color: #101111 !important;
+}
+.AccordionItem {
+    border: none !important;
+    background-color: #101111 !important;
+}

@@ -1,0 +1,55 @@
+.NewPostForm {
+    width: 100%;
+    /* height: 100vh; */
+    /* min-height: 100vh; */
+    height: 800px;
+    /* border: 1px solid rgb(251, 244, 244); */
+    border-radius: 7px;
+    background-color: #333131 !important;
+    position: -webkit-sticky;
+    position: sticky;
+    /* top: 140px; */
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid burlywood;
+    /* width: 100%; */
+    color: black;
+}
+.title {
+    text-align: left;
+    margin-bottom: 40px;
+    /* color: rgb(162, 83, 236); */
+    color: rgb(173, 101, 240);
+    display: flex;
+    gap: 70px;
+}
+.fileUploadLabel {
+    color: white;
+    text-align: left;
+}
+.chipsUpperGap {
+    margin-top: 20px !important;
+}
+.postDetailsTextArea {
+}
+.postDetailsTextArea::-webkit-scrollbar {
+    width: 13px;
+}
+.postDetailsTextArea::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+.closeBtn {
+    width: 30px;
+    height: 30px;
+    /* padding: 1px; */
+    /* margin: 9px; */
+    position: relative;
+    top: 16px;
+}
+.closeBtnIcon {
+    font-size: 28px;
+    position: relative;
+    top: -6px;
+    left: -12px;
+}

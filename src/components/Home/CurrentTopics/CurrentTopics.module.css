@@ -1,0 +1,11 @@
+.item {
+    /* margin: 2px; */
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 814px) {
+    .item {
+        margin: 1px;
+        box-sizing: border-box;
+    }
+}

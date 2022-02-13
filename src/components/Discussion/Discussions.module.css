@@ -1,0 +1,23 @@
+.discussionAll {
+    background-color: #101111;
+}
+.SingleForm {
+    position: relative;
+    top: 450px;
+}
+
+.DiscussionWrapper {
+    color: whitesmoke;
+    position: relative;
+    top: 250px;
+}
+.extra {
+    width: 100%;
+    height: 50vh;
+    background-color: #101111;
+}
+.postQuestion {
+    position: relative;
+    top: 170px;
+    left: 30%;
+}

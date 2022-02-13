@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+
+    position: relative;
+
+    width: 92%;
+    height: 35px;
+}
+
+.searchBar {
+    position: relative;
+    left: -15px;
+
+    background-color: #1d1e1f !important;
+
+    border-radius: 10px !important;
+}
+.searchBar:focus {
+    background-color: #1d1e1f !important;
+    color: white !important;
+    border: none;
+}
+
+.mainSearchButton {
+    width: 35px;
+    height: 35px;
+    border-radius: 50% !important;
+}
+.mainSearchIcon {
+    font-size: 26px;
+    position: relative;
+
+    top: -12px;
+
+    left: -8px;
+}
+.addFolderButton {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    left: 5px;
+    font-size: 24px !important;
+}
+.addFolderButtonIcon {
+    position: relative;
+    top: -10px;
+    left: -7px;
+}

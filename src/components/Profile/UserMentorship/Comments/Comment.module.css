@@ -1,0 +1,98 @@
+/**************** Comment Section **************/
+.commentTab {
+    width: 100%;
+    height: auto !important;
+    /* overflow-y: scroll !important; */
+    z-index: 3;
+}
+
+.mainComment {
+    display: flex;
+    gap: 7px;
+    margin-top: 4px;
+    /* overflow: scroll; */
+}
+.userPictureForComment {
+    width: 40px;
+    height: 40px;
+    /* float: left; */
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 5px gray;
+
+    margin-left: 7px;
+    margin-top: 2px;
+}
+.nameAndComment {
+    /* width: 271px; */
+    width: 281px;
+
+    height: auto;
+    border-radius: 6px;
+    padding: 3px;
+    /* border: 1px solid red !important; */
+    background-color: #404040;
+}
+.userNameForComment {
+    cursor: pointer;
+    text-align: left !important;
+    font-weight: 650;
+    font-size: 1em;
+    width: auto;
+}
+.usersComment {
+    text-align: left !important;
+    padding-left: 10px;
+    font-weight: 650;
+    font-size: 1em;
+    width: auto;
+    height: auto;
+}
+.commentIcon {
+    font-size: 1.3em;
+}
+.commentText {
+    padding-left: 6px;
+}
+
+.CommentBody {
+}
+.reactAndReply {
+    margin-left: 50px;
+}
+.loveButton {
+    background-color: none !important;
+    border-radius: 50% !important;
+    border: none !important;
+    z-index: 1 !important;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 4px;
+    margin-top: 3px;
+    background-color: transparent !important;
+}
+.loveIcon {
+    position: relative;
+    margin-left: -2px;
+    margin-top: -4px;
+    font-size: 22px;
+    color: red;
+}
+.replyBtn {
+    background-color: transparent !important;
+    border: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    top: -3px;
+}
+.commentOptionsButton {
+    width: 34px;
+    height: 30px;
+    position: relative;
+    /* border: 1px solid red !important; */
+    margin-left: 130px;
+    border: none;
+    background-color: #1d1e1f;
+}
+/**************** Comment Section is Done **************/

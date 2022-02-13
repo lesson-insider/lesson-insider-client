@@ -1,0 +1,12 @@
+.DiscussionMain {
+    height: auto;
+    /* background-color: #303233; */
+    background-color: #101111;
+    /* width: 100%; */
+}
+
+@media all and (max-width: 814px) {
+    .OptionColumn {
+        display: none;
+    }
+}

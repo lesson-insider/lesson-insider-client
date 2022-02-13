@@ -1,0 +1,50 @@
+.info {
+    width: 700px;
+    height: 300px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 4px 4px 4px gray;
+    background-color: whitesmoke;
+    /* background-color: yellowgreen; */
+}
+.image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+
+    border: gray;
+    box-shadow: 4px 4px 4px gray;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.designation {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+.designation > h6 {
+    position: relative;
+    left: -12px !important;
+}
+.blueTikMark {
+    color: #346bda;
+    /* margin-left: 3px; */
+}
+.infoText {
+    width: 400px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 95px;
+}
+
+.quoteIcon {
+    font-size: 28px;
+    position: relative;
+    top: -3px;
+    left: -29px;
+    color: purple;
+}

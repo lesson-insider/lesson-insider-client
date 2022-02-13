@@ -1,0 +1,7 @@
+.postsBody {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100% !important;
+    /* z-index: 3; */
+    /* position: fixed; */
+}

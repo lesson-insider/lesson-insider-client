@@ -1,0 +1,346 @@
+.mainDiscussion {
+    width: 97%;
+
+    border: 1px solid #353738;
+    /* height: 600px; */
+    height: auto;
+    background-color: #1d1e1f;
+    margin: 30px;
+    border-radius: 6px;
+
+    color: #ddd8d2;
+    padding: 10px;
+    overflow-y: hidden !important;
+}
+
+.header {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.header > img {
+    width: 54px;
+    height: 54px;
+    float: left;
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 5px gray;
+
+    margin-right: 10px;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+/* may be eita kaj kortese na ... cursor: pointer;*/
+.header > h5 {
+    font-weight: 650;
+    font-size: 1.2em;
+    width: auto;
+}
+.header > h5:hover {
+    color: lightblue !important;
+}
+.userName {
+    cursor: pointer;
+    text-align: left !important;
+    /* border: 1px solid red; */
+    width: 300px;
+}
+.userNameText {
+    /* border: 1px solid red; */
+}
+.float {
+    overflow: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.float .header:nth-child(1) {
+    float: left;
+    width: 100%;
+}
+.float .header:nth-child(2) {
+    float: right;
+    width: 100%;
+}
+
+.userDetails {
+    display: flex;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.blueTikMark {
+    color: #346bda;
+}
+.postOptionsButton {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    /* border: 1px solid red !important; */
+    /* left: -14px; */
+    left: 5px;
+    background-color: #1d1e1f;
+    border: none;
+}
+.postOptionsButtonColor {
+    color: rgb(80, 79, 79);
+    position: relative;
+    top: 0px;
+    /* left: -10px; */
+    font-size: 27px;
+}
+.freeTag {
+    background-color: yellow !important;
+    color: black;
+    font-weight: bold;
+
+    /* background-color: green;
+    color: white; */
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    position: relative;
+    top: -2px;
+}
+.paidTag {
+    background-color: rgb(255, 81, 0);
+    color: black;
+    font-weight: bold;
+
+    /* background-color: green;
+    color: white; */
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    position: relative;
+    top: -2px;
+}
+.classTag {
+    /* font-size: 27px; */
+    font-size: 33px;
+    position: relative;
+    top: -7px;
+}
+.classNumber {
+    position: relative;
+
+    left: -38px;
+    top: -2px;
+}
+.institutionLogo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: -20px;
+}
+.tagsButton {
+    border-radius: 6px;
+    display: flex;
+    gap: 3px;
+}
+.buttonTag {
+    /* background-color: #666 !important;
+    border: 1px solid #666 !important; */
+    background-color: blueviolet !important;
+    border: 1px solid blueviolet;
+    padding: 2px !important;
+    font-weight: 600 !important;
+    color: whitesmoke;
+    border-radius: 6px;
+}
+.buttonTag:hover {
+    background-color: blueviolet !important;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    border-right: 1px solid rgb(146, 146, 146);
+    color: whitesmoke;
+    font-weight: bold !important;
+
+    /* border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px; */
+    /* position: relative;
+    top: -2px; */
+    /* transform: 5s; */
+}
+
+/******************************************************/
+.postBody {
+    border: 1px solid #666;
+    width: auto;
+    height: 300px;
+    position: relative;
+
+    overflow-y: hidden !important;
+    box-sizing: border-box;
+    padding: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    z-index: 3 !important;
+}
+
+/******************************************************/
+
+.emojiColor {
+    color: red;
+
+    font-size: 24px;
+    position: relative;
+
+    left: 10px;
+    /* z-index: -3 !important; */
+}
+.likeButton {
+    background-color: #1d1e1f !important;
+    border-radius: 50% !important;
+    color: red !important;
+    border: none !important;
+    z-index: 1 !important;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 4px;
+}
+.sendMoneyButton {
+    background-color: none !important;
+    border-radius: 50% !important;
+    color: white !important;
+    border: none !important;
+    z-index: 1 !important;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 4px;
+}
+.sendMoneyIcon {
+    position: relative;
+    margin-left: -8px;
+    margin-top: -7px;
+    font-size: 22px;
+}
+
+.commentBox {
+    position: relative;
+    top: 4px;
+
+    left: 18px;
+}
+.breadcrumbStyle {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+/************************************************/
+.discussionPostBody {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 250px; */
+    height: auto;
+    overflow: hidden;
+}
+
+.discussionPostBody::-webkit-scrollbar {
+    border-radius: 25px;
+    width: 13px;
+}
+.discussionPostBody::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+
+.discussionPost {
+    flex-basis: 70%;
+    /* jhamela ase */
+    /* width: 70%; */
+    padding: 8px;
+    display: block;
+
+    margin-block-start: 0.2em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+
+    text-align: justify;
+
+    word-break: normal;
+    white-space: normal;
+    font-size: 12px !important;
+}
+.discussionPost h5 {
+    display: block;
+
+    margin-block-start: 0.2em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+
+    text-align: justify;
+
+    word-break: normal;
+    white-space: normal;
+    font-size: 20px !important;
+    padding: 8px;
+}
+@media all and (max-width: 1285px) {
+    .discussionPost {
+        flex-basis: 100%;
+    }
+}
+.discussionPostPicture {
+    margin-top: 10px;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+@media all and (max-width: 1285px) {
+    .discussionPostPicture {
+        flex-basis: 100% !important;
+    }
+}
+.discussEveryPicture {
+    width: auto;
+    height: auto;
+
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+.discussEachPicture {
+    width: 250px;
+    height: auto;
+    object-fit: cover !important;
+}
+@media all and (max-width: 1285px) {
+    .discussEachPicture {
+        width: 100%;
+        height: auto;
+        object-fit: cover !important;
+    }
+}
+.DiscussionFooter {
+    text-align: center;
+}
+.answerIcon {
+    position: relative;
+    top: -5px;
+    margin-right: 4px;
+    font-size: 12px;
+}
+.problemStatusOption {
+    display: inline-block;
+}
+.upVoteIcon {
+    position: relative;
+    top: -5px;
+    margin-left: 6px;
+}
+.spandIcon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

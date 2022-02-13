@@ -1,0 +1,43 @@
+.ContactBody {
+    width: 100%;
+    /* height: 100vh; */
+    height: 82vh;
+}
+.Contact {
+    width: 70%;
+    height: 70vh;
+    /* border: 1px solid red; */
+    /* margin: 60px auto; */
+    margin: 85px auto;
+    background-color: #3f4142 !important;
+    border-radius: 7px;
+}
+.contactIcon {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    left: -40px;
+}
+.contactText {
+    /* border: 1px solid red; */
+    width: 78%;
+    height: 50%;
+    /* margin: -50px auto; */
+    margin: -20px auto;
+    color: #ddd8d2;
+}
+.contactTextDetails {
+    margin-top: 30px;
+    position: relative;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.singleContact {
+    display: inline-block !important;
+}
+.emailIcon {
+    width: 35px;
+    height: 35px;
+}

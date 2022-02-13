@@ -1,0 +1,14 @@
+.homeContainer {
+    /* background-color: rgb(253, 248, 248); */
+    background-color: #292b2c;
+    /* background-color: #303233; final color */
+    /* width: 100% !important; */
+    overflow-x: hidden !important;
+}
+.swiperGap {
+    /* border: 1px solid red !important; */
+    margin-bottom: 1px !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    /* margin: 45px !important; */
+}

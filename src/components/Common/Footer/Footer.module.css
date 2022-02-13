@@ -1,0 +1,62 @@
+.footerMain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #1d1e1f;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.footerMainText > h6 {
+    color: white;
+}
+.footerMainText > h6 > a {
+    text-decoration: none;
+    color: #7fffd4;
+    margin-left: 3px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+.footerMainText > h6 > a:hover {
+    color: rgb(140, 140, 218);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.footerIcon > a > i {
+    color: white;
+    margin: 4px;
+    box-sizing: border-box;
+}
+
+.footerLink > li > a {
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+.footerLink > li > a:hover {
+    /* background: #7fffd4; */
+    color: #7fffd4 !important;
+
+    /* transform: scale(1.1); */
+    /* padding: 5px; */
+    /* border-radius: 5px; */
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.footerIcon > a > i:hover {
+    margin: 4px;
+    background: #7fffd4;
+    color: black !important;
+
+    transform: scale(1.1);
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.copyRight {
+    color: #7fffd4 !important;
+    text-align: center;
+    background-color: #3e4042;
+}

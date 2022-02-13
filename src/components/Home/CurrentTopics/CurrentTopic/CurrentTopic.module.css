@@ -1,0 +1,32 @@
+.topicMain {
+    font-size: 3rem;
+
+    border: 2px dashed blueviolet;
+    width: 95px;
+    height: 136px;
+
+    box-sizing: border-box;
+    margin: 50px 50px 0px 40px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+}
+.topicMain:hover {
+    box-shadow: 4px 4px 20px 4px rgb(207, 207, 207);
+    cursor: pointer;
+}
+.topicTitle {
+    position: relative;
+
+    color: black;
+
+    left: 15px;
+}
+.icon {
+    /* color: orange; */
+    color: blueviolet;
+    position: relative;
+    top: -9px;
+    left: 25px;
+    width: 36px;
+    height: 36px;
+}
