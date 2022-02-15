@@ -1,0 +1,49 @@
+/* .mainVideo {
+    background-color: #101111 !important;
+} */
+.MainVideoCards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* margin-left: 40px; */
+    color: #ddd8d2;
+    margin-top: 20px !important;
+    cursor: pointer;
+    background-color: #101111 !important;
+}
+/* .MainVideoCards:hover {
+    box-shadow: 4px 4px 10px 4px gray;
+} */
+
+.offCanvas {
+    position: fixed !important;
+    transition: left 0.3s;
+    /* width: 200px; */
+    /* height: 100vh; */
+    overflow-y: hidden !important;
+    /* background-color: aquamarine; */
+    /* left: -200px; */
+}
+.SingleForm {
+    position: fixed !important;
+    /* display: block; */
+    top: 550px;
+    width: 70%;
+    /* transition: display 0.4s; */
+    z-index: 3;
+}
+.searchBtn {
+    position: fixed !important;
+    width: 50px !important;
+    height: 50px !important;
+    top: 60% !important;
+    left: 98%;
+    border: none;
+    background-color: rgb(238, 195, 195);
+}
+.searchBtnIcon {
+    position: relative !important;
+    left: -1px;
+    font-size: 29px;
+    /* color: rgb(250, 253, 243); */
+}

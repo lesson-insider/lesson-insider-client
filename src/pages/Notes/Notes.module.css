@@ -10,19 +10,3 @@ Background light color -> # 1D1E1F
 Selection color -> # EEEEEE
 Selection background color -> # 404040
 */
-.userHomeMain {
-    background-color: #101111;
-    color: #ddd8d2;
-    width: 100%;
-    box-sizing: border-box;
-}
-@media all and (max-width: 1201px) {
-    .OptionColumn {
-        display: none;
-    }
-}
-@media all and (max-width: 555px) {
-    .OnlineFriends {
-        display: none;
-    }
-}

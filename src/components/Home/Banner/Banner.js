@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel, Image } from "react-bootstrap";
 import { FcSearch } from "react-icons/fc";
 import best1 from "../../../images/Common/Navbar/1.png";
@@ -56,7 +56,11 @@ export default function Banner({ searchVisible }) {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            {searchVisible && <SingleForm />}
+            {searchVisible && (
+                <div className={styles.searchContainer}>
+                    <SingleForm viewSearchIcon="false" />
+                </div>
+            )}
         </>
     );
 }

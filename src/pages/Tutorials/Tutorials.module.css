@@ -1,0 +1,27 @@
+.masterTutorials {
+    height: 300vh;
+    color: white;
+    background-color: #101111;
+}
+.offCanvas {
+    position: fixed !important;
+    transition: left 0.3s;
+
+    overflow-y: hidden !important;
+}
+.OpenCloseBtn {
+    position: fixed !important;
+    width: 50px !important;
+    height: 50px !important;
+    top: 15% !important;
+    left: 96%;
+    border: none;
+    background-color: brown;
+}
+
+.OpenCloseBtnIcon {
+    position: relative !important;
+    left: -1px;
+    font-size: 29px;
+    color: rgb(250, 253, 243);
+}

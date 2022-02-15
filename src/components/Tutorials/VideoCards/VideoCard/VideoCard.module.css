@@ -1,0 +1,60 @@
+/* xl for 100
+lg for 175
+Main font color -> # AAA6A2
+Main font color (light) -> # DDD8D2
+Links color -> # 9BB6DF
+Links color (visited) -> # 906F51
+Links header color -> # 6B886B
+Background color -> # 101111
+Background light color -> # 1D1E1F
+Selection color -> # EEEEEE
+Selection background color -> # 404040
+*/
+.mainVideoCard {
+    width: 370px;
+    height: 350px;
+    border: none;
+    background-color: #1d1e1f;
+    border-radius: 6px !important;
+}
+.mainVideoCard:hover {
+    box-shadow: 4px 4px 10px 4px rgb(73, 73, 73);
+}
+.Video {
+    width: 370px;
+    height: 230px;
+    background-color: #727171;
+}
+.VideoControl {
+    width: 370px;
+    height: 230px;
+}
+.VideoDetails {
+    margin-left: 5px;
+}
+.VideoTitle {
+    margin-top: 14px;
+    text-align: left;
+}
+.blueTikMark {
+    color: #346bda;
+    padding-left: 6px;
+}
+.tagsButton {
+    border-radius: 6px;
+    display: flex;
+    gap: 3px;
+    margin-left: 120px;
+}
+.buttonTag {
+    background-color: #666 !important;
+    border: 1px solid #666 !important;
+    padding: 1px !important;
+    font-weight: 600 !important;
+}
+.buttonTag:hover {
+    background-color: rgb(82, 82, 82) !important;
+}
+.moreInfo {
+    display: flex;
+}
