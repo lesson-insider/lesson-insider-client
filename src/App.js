@@ -35,6 +35,8 @@ import Recruitment from "./pages/FooterComponents/Recruitment/Recruitment";
 import TermsAndCondition from "./pages/FooterComponents/TermsAndCondition/TermsAndCondition";
 import ShareIdea from "./pages/FooterComponents/ShareIdea/ShareIdea";
 import ReportProblem from "./pages/FooterComponents/ReportProblem/ReportProblem";
+import OpenTutorial from "./components/Tutorials/OpenTutorial/OpenTutorial";
+import ErrorPage from "./components/Common/ErrorPage/ErrorPage";
 
 function App() {
     const user = JSON.parse(localStorage.getItem("profile"));
@@ -122,6 +124,8 @@ function App() {
                     element={<ReportProblem />}
                 />
                 {/* -------Footer Navbar Ends-------------------------------------- */}
+                <Route path="/tutorial" exact element={<OpenTutorial />} />
+                <Route path="*" exact element={<ErrorPage />} />
             </Routes>
         </Router>
     );

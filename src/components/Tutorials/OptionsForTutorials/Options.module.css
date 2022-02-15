@@ -1,0 +1,19 @@
+.MainOptions {
+    position: fixed;
+    width: 14%;
+    /* width: 300px; */
+    /* border: 1px solid red; */
+    height: 857px;
+    overflow-y: scroll;
+
+    /* background-color: #101111 !important; */
+    /*color: #101111 !important; */
+}
+.MainOptions::-webkit-scrollbar {
+    border-radius: 25px;
+    width: 13px;
+}
+.MainOptions::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}

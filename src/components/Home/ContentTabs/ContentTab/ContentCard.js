@@ -57,7 +57,7 @@ let useClickOnUsersNameToViewDetails = (handler) => {
         return () => {
             document.removeEventListener("mousedown", maybeHandler);
         };
-    });
+    }, []);
 
     // and it also returns a ref ..
     return domNodeRef;
