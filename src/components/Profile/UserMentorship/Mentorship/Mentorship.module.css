@@ -26,6 +26,9 @@
     transform: scale(1.02);
     transition: all ease-in-out 0.3s;
 }
+.mentor:hover .postOptionsButton {
+    visibility: visible;
+}
 
 .header {
     display: flex;
@@ -74,6 +77,8 @@
 
     border: none;
     background-color: #1d1e1f;
+    visibility: hidden;
+    left: 2px;
 }
 .postOptionsButtonColor {
     color: rgb(80, 79, 79) !important;

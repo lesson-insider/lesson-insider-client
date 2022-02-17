@@ -9,6 +9,7 @@
 
     border: 1px solid gray;
     z-index: 3;
+    overflow: hidden;
 }
 .main:hover {
     /* box-shadow: 3px 3px 10px 3px rgb(199, 199, 199); */
@@ -20,6 +21,29 @@
 
     z-index: 3;
 }
+.main:hover .threeDotsButton {
+    visibility: visible;
+}
+.main:hover .buttonRow {
+    /* visibility: visible; */
+    top: -26px;
+    /* left: 8px; */
+    /* height: 100%; */
+    transition: top 0.3s;
+}
+.buttonRow {
+    position: relative;
+    /* top: -26px;
+    left: 8px; */
+    top: 6px;
+    left: 8px;
+    /* height: 0%; */
+    /* visibility: hidden; */
+}
+.buttonBlock {
+    display: flex;
+}
+
 .main img {
     box-sizing: border-box;
     width: 100%;
@@ -39,12 +63,18 @@
     border-radius: 10px;
     border: none;
     background-color: transparent;
+    display: inline;
+    visibility: hidden;
 }
+
 .threeDotsButtonIcon {
     position: relative;
     left: -8px;
     font-size: 27px;
     color: rgb(80, 79, 79);
+}
+.threeDotsButtonIcon:hover {
+    color: rgb(69, 2, 255);
 }
 .contentName {
     text-align: left;
@@ -144,14 +174,7 @@
     padding: 2px;
     font-size: 16px;
 }
-.buttonRow {
-    position: relative;
-    top: -26px;
-    left: 8px;
-}
-.buttonBlock {
-    display: flex;
-}
+/*button row*/
 
 .addToLibraryButton {
     background-color: none !important;

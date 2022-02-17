@@ -12,7 +12,10 @@ Selection background color -> # 404040
 */
 .mainVideoCard {
     width: 370px;
-    height: 350px;
+    /* height: 350px; */
+    /* max ar min er kahini jante hobe */
+    max-height: 375px;
+    /* height: auto; */
     border: none;
     background-color: #1d1e1f;
     border-radius: 6px !important;
@@ -36,17 +39,56 @@ Selection background color -> # 404040
     margin-top: 14px;
     text-align: left;
 }
+.userTitle {
+    text-align: left;
+}
 .blueTikMark {
     color: #346bda;
     padding-left: 6px;
 }
+.mainVideoCard:hover .optionButton {
+    /* display: block; */
+    visibility: visible;
+}
+
+.optionButton {
+    position: relative;
+    top: -34px;
+    left: 333px;
+    z-index: 3;
+    /* display: none; */
+    visibility: hidden;
+
+    width: 20px;
+    height: 30px;
+    position: relative;
+    /* border-radius: 50% !important; */
+    /* left: 5px; */
+    background-color: #1d1e1f;
+    border: none;
+}
+
+.postOptionsButtonColor {
+    color: rgb(80, 79, 79);
+    position: relative;
+    top: 0px;
+    /* left: -10px; */
+    font-size: 27px;
+}
 .tagsButton {
+    width: auto;
+    height: 50px;
     border-radius: 6px;
     display: flex;
     gap: 3px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
+    position: relative;
+    /* facebook er jonno ei bottom ta shudhu */
+    bottom: 20px;
 }
 .buttonTag {
+    width: auto !important;
+    height: 30px !important;
     background-color: #666 !important;
     border: 1px solid #666 !important;
     padding: 1px !important;
