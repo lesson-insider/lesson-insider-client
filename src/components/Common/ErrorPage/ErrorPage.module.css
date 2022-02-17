@@ -1,0 +1,17 @@
+.ErrorPageBody {
+    /* background-color: rgb(41, 41, 41); */
+    background-color: rgb(49, 49, 49);
+}
+.ErrorTextDiv {
+    background-color: black;
+    /* width: 30px; */
+    /* height: 90px; */
+    margin-top: 0px;
+    color: yellow;
+    text-align: center;
+    font-size: 34px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

@@ -26,7 +26,8 @@ export default function SwiperSlideMentorship({ featureTitle }) {
                     <h1 className={styles.title}>{featureTitle}</h1>
                     <Swiper
                         slidesPerView={3}
-                        spaceBetween={30}
+                        // spaceBetween={30}
+                        spaceBetween={20}
                         // koyta kore slide change hobe
                         slidesPerGroup={1}
                         loop={true}

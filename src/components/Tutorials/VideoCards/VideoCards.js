@@ -12,6 +12,10 @@ export default function VideoCards() {
             <div className={styles.SingleForm}>
                 <SingleForm />
             </div>
+            <VideoCard
+                urlLink="https://www.facebook.com/mohammadsheakh.mern/videos/1248415582317251"
+                title="আন্তর্জাতিক কুরআন তিলাওয়াত সোহাইল আহমেদ তারিন"
+            />
 
             <VideoCard
                 urlLink="https://www.youtube.com/watch?v=dAv7UDlmkvQ&t=384s&ab_channel=BusinessInspectionBD"

@@ -5,7 +5,11 @@ import ReactPlayer from "react-player";
 import { Alert, Button, Col, Row } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import OpenTutorial from "../../OpenTutorial/OpenTutorial";
-import { BsFillCheckCircleFill } from "react-icons/bs";
+import {
+    BsFillCheckCircleFill,
+    BsThreeDots,
+    BsThreeDotsVertical,
+} from "react-icons/bs";
 
 // import BaseReactPlayer from "react-player/base";
 export default function VideoCard({ urlLink, title }) {
@@ -47,6 +51,8 @@ export default function VideoCard({ urlLink, title }) {
                     width="370px"
                     height="230px"
                     controls
+                    volume="0"
+                    muted="true"
                     url={urlLink}
                     // url={video1}
                     // url="https://www.youtube.com/watch?v=Fh1iADnV96Y&t=4s&ab_channel=GalleryofSheakh"
@@ -61,17 +67,25 @@ export default function VideoCard({ urlLink, title }) {
                     {/* আন্তর্জাতিক কুরআন তিলাওয়াত সোহাইল আহমেদ তারিন */}
                     {title}
                 </h5>
-                <h5 className={styles.VideoTitle}>
+                <h5 className={styles.userTitle}>
                     Mohammad Bin Ab. Jalil Sheakh
                     <span className={styles.blueTikMark}>
                         <BsFillCheckCircleFill />
                     </span>
                 </h5>
+                <div>
+                    <button className={styles.optionButton}>
+                        <BsThreeDotsVertical
+                            className={styles.postOptionsButtonColor}
+                        />
+                    </button>
+                </div>
                 {/* <div className={styles.moreInfo}> */}
 
                 {/* <h5>4 years ago</h5> */}
 
                 <div className={styles.tagsButton}>
+                    <Button className={styles.buttonTag}>2 years</Button>
                     <Button className={styles.buttonTag}>BGS</Button>
                     <Button className={styles.buttonTag}>CSE</Button>
                     <Button className={styles.buttonTag}>Database</Button>
@@ -82,8 +96,6 @@ export default function VideoCard({ urlLink, title }) {
                 {/* <Link as={Link} to={`/tutorial/?searchQuery=${ytvideo}`}>
                     <h4>আন্তর্জাতিক কুরআন তিলাওয়াত</h4>
                 </Link> */}
-                {/* <Button>
-                </Button> */}
             </div>
         </div>
     );
