@@ -29,6 +29,7 @@ import { useRef } from "react";
 import HomeNotifications from "../../UsersHome/HomeNotifications/HomeNotifications";
 import OnlineFriends from "../../UsersHome/OnlineFriends/OnlineFriends";
 import Messages from "../../UsersHome/Messages/Messages";
+
 let useClickOnUsersNameToViewDetails = (handler) => {
     // is going to be an anonymous function ..that does all the staff ..
     // our useClickOnUsersNameToViewDetails .. it takes something to do .. it takes a
@@ -91,6 +92,7 @@ let useClickOnOutsideToHideNotification = (handler) => {
     return domNodeRef1;
 };
 export default function MainNavbar() {
+    const user = JSON.parse(localStorage.getItem("LessonInsiderUserProfile"));
     const [isOpenNotification, setIsOpenNotification] = useState(false);
     const [isOpenMessages, setIsOpenMessages] = useState(false);
     // state for hide show icon button
@@ -206,26 +208,17 @@ export default function MainNavbar() {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            {/* <Form className="d-flex">
-                                <FormControl
-                                    type="search"
-                                    placeholder="Search"
-                                    className="me-2"
-                                    aria-label="Search"
-                                />
-                                <Button variant="outline-success">
-                                    Search
-                                </Button>
-                            </Form> */}
-
                             {/* ----------------------- 3rd Dropdown----------------------------------- */}
-                            <Nav.Link
-                                className={styles.nlinkIcon}
-                                onClick={toggleMessagesModal}
-                            >
-                                <FcSms className={styles.navIcon} />
-                                {/* Message Number */}5
-                            </Nav.Link>
+                            {user && (
+                                <Nav.Link
+                                    className={styles.nlinkIcon}
+                                    onClick={toggleMessagesModal}
+                                >
+                                    <FcSms className={styles.navIcon} />
+                                    {/* Message Number */}5
+                                </Nav.Link>
+                            )}
+
                             {isOpenMessages && (
                                 <div
                                     ref={domNodeForMessage}
@@ -240,30 +233,21 @@ export default function MainNavbar() {
                                         <FcSms className={styles.navIcon} />
                                         {/* Message Number */}
                                     </Nav.Link>
-                                    {/* <Button
-                                        onClick={toggleMessagesModal}
-                                        className={
-                                            styles.pathDetailsCloseButton
-                                        }
-                                    >
-                                        <AiOutlineCloseCircle
-                                            className={
-                                                styles.pathDetailsCloseIcon
-                                            }
-                                        />
-                                    </Button> */}
                                 </div>
                             )}
-                            <Nav.Link
-                                className={styles.nlinkIcon}
-                                onClick={toggleNotificationsModal}
-                            >
-                                <AiTwotoneNotification
-                                    className={styles.navIcon}
-                                />
-                                {/* Notification Number */}
-                                19
-                            </Nav.Link>
+                            {user && (
+                                <Nav.Link
+                                    className={styles.nlinkIcon}
+                                    onClick={toggleNotificationsModal}
+                                >
+                                    <AiTwotoneNotification
+                                        className={styles.navIcon}
+                                    />
+                                    {/* Notification Number */}
+                                    19
+                                </Nav.Link>
+                            )}
+
                             {isOpenNotification && (
                                 <div
                                     ref={domNodeForNotification}
@@ -281,41 +265,42 @@ export default function MainNavbar() {
                                         />
                                         {/* Notification Number */}
                                     </Nav.Link>
-                                    {/* <Button
-                                        onClick={toggleNotificationsModal}
-                                        className={
-                                            styles.pathDetailsCloseButton
-                                        }
-                                    >
-                                        <AiOutlineCloseCircle
-                                            className={
-                                                styles.pathDetailsCloseIcon
-                                            }
-                                        />
-                                    </Button> */}
                                 </div>
                             )}
-                            <Nav.Link
-                                className={styles.nlink}
-                                as={Link}
-                                to="/user/:id"
-                            >
-                                Profile
-                            </Nav.Link>
-                            <NavDropdown
-                                title="লগ ইন করুন "
-                                id="collasible-nav-dropdown"
-                            >
-                                <NavDropdown.Item as={Link} to="/auth">
-                                    ইউজার
-                                </NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/auth">
-                                    এডমিন
-                                </NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/auth">
-                                    সাইন আপ করুন
-                                </NavDropdown.Item>
-                            </NavDropdown>
+                            {user && (
+                                <Nav.Link
+                                    className={styles.nlink}
+                                    as={Link}
+                                    to="/user/:id"
+                                >
+                                    Profile
+                                </Nav.Link>
+                            )}
+                            {!user && (
+                                <NavDropdown
+                                    title="লগ ইন করুন "
+                                    id="collasible-nav-dropdown"
+                                >
+                                    <NavDropdown.Item
+                                        as={Link}
+                                        to="/auth/?formType=UserSignIn"
+                                    >
+                                        ইউজার
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item
+                                        as={Link}
+                                        to="/auth/?formType=AdminSignIn"
+                                    >
+                                        এডমিন
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item
+                                        as={Link}
+                                        to="/auth/UserSignUp"
+                                    >
+                                        সাইন আপ করুন
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                            )}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -5,7 +5,7 @@ import Options from "../../components/Tutorials/OptionsForTutorials/Options";
 import VideoCards from "../../components/Tutorials/VideoCards/VideoCards";
 import styles from "./Tutorials.module.css";
 export default function Tutorials1() {
-    const [positionLeft, setPositionLeft] = useState("-265px");
+    const [positionLeft, setPositionLeft] = useState("0px");
     const handleClickMenu = () => {
         if (positionLeft === "-265px") {
             console.log("ss1", positionLeft);

@@ -1,0 +1,12 @@
+.questionPostButton {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 9px !important; */
+}
+.modalPosition {
+    position: relative;
+    top: 10% !important;
+    border-radius: 9px !important;
+}

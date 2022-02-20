@@ -1,0 +1,171 @@
+.AuthenticationPage {
+    background-color: #2f3131;
+    color: #aaa6a2;
+    width: 100%;
+    height: 90vh;
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 9px !important; */
+}
+.AuthenticationForm {
+    width: 70% !important;
+    /* height: 460px !important; */
+    height: auto !important;
+    /* height: 100% !important; */
+    /* border: 1px solid gray; */
+    border: none;
+    background-color: #9ecfff;
+    border-radius: 10px;
+    padding: 30px;
+    color: #0c0c0c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .AuthenticationForm::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: gainsboro;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+} */
+
+.image {
+    width: 100%;
+    /* height: 100%; */
+    height: 460px !important;
+
+    object-fit: fill;
+    border-radius: 5px 0px 0px 7px;
+}
+.left {
+    flex-basis: 60% !important;
+    height: 460px !important;
+
+    min-height: 400px !important;
+    align-self: center;
+    /* justify-self: center; */
+}
+.right {
+    flex-basis: 40% !important;
+    height: 460px !important;
+    /* align-items: center !important; */
+    /* height: 400px !important; */
+}
+@media all and (max-width: 984px) {
+    .AuthenticationForm {
+        width: 85% !important;
+        /* height: 600px !important; */
+    }
+    .left {
+        flex-basis: 0% !important;
+    }
+    .right {
+        flex-basis: 100% !important;
+    }
+    .NewPostForm {
+        border-radius: 7px !important;
+        border: 1px solid burlywood !important;
+    }
+}
+@media all and (max-width: 784px) {
+    .AuthenticationForm {
+        width: 95% !important;
+        /* height: 600px !important; */
+    }
+    .left {
+        flex-basis: 0% !important;
+    }
+    .right {
+        flex-basis: 100% !important;
+    }
+    .NewPostForm {
+        border-radius: 7px !important;
+        border: 1px solid burlywood !important;
+    }
+}
+/*********************************************************************/
+.NewPostForm {
+    width: auto !important;
+
+    min-height: 401px !important;
+    height: auto !important;
+    border-radius: 0px 7px 7px 0px;
+    /* border-radius: 7px; */
+    background-color: #333131 !important;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 140px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid burlywood;
+    border-left: none !important;
+    /* width: 100%; */
+    color: black;
+}
+.title {
+    text-align: left;
+    margin-bottom: 40px;
+    /* color: rgb(162, 83, 236); */
+    color: rgb(173, 101, 240);
+}
+.fileUploadLabel {
+    color: white;
+    text-align: left;
+}
+.chipsUpperGap {
+    margin-top: 20px !important;
+}
+.postDetailsTextArea {
+}
+.postDetailsTextArea::-webkit-scrollbar {
+    width: 13px;
+}
+.postDetailsTextArea::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+
+/****************************************/
+.googleFacebookBtnGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.googleFacebookBtn {
+    background-color: #1d1e1f;
+    color: #aaa6a2;
+    border-radius: 6px;
+    width: 45%;
+    border: none;
+    padding: 5px;
+}
+.googleFacebookBtn:hover {
+    box-shadow: 2px 2px 2px gray;
+}
+.FacebookIconColor {
+    color: #51a5f3;
+}
+.submitBtn {
+    position: relative;
+    left: 80%;
+}
+.signInBtnForSignUpForm {
+    background-color: #1d1e1f;
+    color: #aaa6a2;
+    border-radius: 6px;
+    width: auto;
+    text-decoration: none;
+    padding: 3px;
+}
+.signInBtnForSignUpForm:hover {
+    background-color: #161515 !important;
+    color: #da9148 !important;
+}
