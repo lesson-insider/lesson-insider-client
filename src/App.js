@@ -37,9 +37,10 @@ import ShareIdea from "./pages/FooterComponents/ShareIdea/ShareIdea";
 import ReportProblem from "./pages/FooterComponents/ReportProblem/ReportProblem";
 import OpenTutorial from "./components/Tutorials/OpenTutorial/OpenTutorial";
 import ErrorPage from "./components/Common/ErrorPage/ErrorPage";
+import UserSignUp from "./pages/Authentication/UserSignUp/UserSignUp";
 
 function App() {
-    const user = JSON.parse(localStorage.getItem("profile"));
+    const user = JSON.parse(localStorage.getItem("LessonInsiderUserProfile"));
     return (
         <Router>
             <MainNavbar />
@@ -63,6 +64,17 @@ function App() {
                     element={
                         !user ? (
                             <Authentication />
+                        ) : (
+                            <Navigate replace to="/home" />
+                        )
+                    }
+                />
+                <Route
+                    path="/auth/UserSignUp"
+                    exact
+                    element={
+                        !user ? (
+                            <UserSignUp showStatus={true} />
                         ) : (
                             <Navigate replace to="/home" />
                         )

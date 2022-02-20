@@ -4,10 +4,14 @@
     /* width: 300px; */
     /* border: 1px solid red; */
     height: 857px;
+    /* overflow-y: hidden; */
     overflow-y: scroll;
 
     /* background-color: #101111 !important;
     color: #101111 !important; */
+}
+.MainOptions:hover {
+    overflow-y: scroll;
 }
 .MainOptions::-webkit-scrollbar {
     border-radius: 25px;
